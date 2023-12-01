@@ -23,7 +23,7 @@ class DataIngestion:
 
     def export_collection_as_dataframe(self,collection_name,db_name):
         try:
-            mongo_cient=MongoClient(MONGO_DB_URL)
+            mongo_client=MongoClient(MONGO_DB_URL)
 
             collection=mongo_client[db_name][collection_name]
 
